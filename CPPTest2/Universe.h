@@ -28,7 +28,7 @@ public:
 class Universe
 {
 public:
-	Universe(int _starCount, double  _xSize, double  _ySize);
+	Universe(int _starCount, int  _xSize, int  _ySize);
 	~Universe();
 	double xSize;
 	double ySize;

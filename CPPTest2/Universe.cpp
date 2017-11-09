@@ -10,7 +10,7 @@ Planet::Planet()
 Planet::~Planet()
 {
 }
-Star::Star(double _x, double _y, int _planetCount)
+Star::Star(int _x, int _y, int _planetCount)
 {
 	random_device rd;
 	mt19937 random(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом
