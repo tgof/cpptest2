@@ -9,7 +9,7 @@ Spaceship::Spaceship()
 	mass=0;
 	driverCount=0;
 	gunPoints=0;
-	shipClass=0;
+	shipClass=Size::Size_extraSmall;
 }
 
 

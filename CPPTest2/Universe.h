@@ -3,6 +3,8 @@
 #include <vector>  
 #include <string>  
 
+#include "CoreEnums.h"
+
 using namespace std;
 
 class Planet
@@ -12,7 +14,7 @@ public:
 	~Planet();
 
 	string Name;
-	int Size;	// это инт. сайз должен быть - маленький, срений, большой, экстрабольшой. в общем градация такая же как с кораблями. видимо, надо делать энум.	
+	Size planetSize;	
 };
 class Star
 {

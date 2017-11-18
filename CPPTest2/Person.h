@@ -1,4 +1,6 @@
 #pragma once
+
+#include "CoreEnums.h"
 #include "stdafx.h"
 #include <string>  
 #include <vector>  
@@ -22,7 +24,7 @@ public:
 	int mood;
 	vector<pair<string, int>> profs;
 	vector<string> traits;
-	string race;
+	Race race;
 
 };
 

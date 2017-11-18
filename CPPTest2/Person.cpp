@@ -10,15 +10,14 @@ Person::Person()
 	// инициализируем списки всех параметров, используемых для содания персонажа
 	
 	//здесь должны быть профессии
-	vector<string> Profession = { "pilot", "canoneer" };		
+	vector<string> Profession = { "pilot", "canoneer" };	
+
 	//здесь должны быть черты характера
 	vector<string> Trait = { 
 		"fiery",		// вспыльчивый
 		"calm"			// спокойный
 	};				
 
-	//здесь должны быть расы
-	vector<string> Race = { "human", "robot" };	
 
 	//добавляем профессии. У каждой есть уровень умения(пока не решил, но наверное от 1 до 100)
 	for (int i = 0; i < 1; i++){
@@ -27,8 +26,8 @@ Person::Person()
 		profs.push_back(make_pair(prof, rate));
 	}
 
-	//раса только одна
-	race = Race[random() % (Race.size())];
+	//раса только одна (из перечисления рас)
+	race = Race(random() % (Race::Race_count));
 
 	//заносим столько трейтов сколько нужно
 	for (int i = 0; i < 1; i++) {

@@ -5,7 +5,8 @@ Planet::Planet()
 {
 	random_device rd;
 	mt19937 random(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом
-	Size = random() % 4;
+
+	planetSize = Size(random() % Size::Size_count);
 }
 Planet::~Planet()
 {
@@ -36,7 +37,8 @@ Universe::Universe(int _starCount, int _xSize, int _ySize)
 	int ySize = _ySize;
 	for (int i = 0; i < _starCount; i++)
 	{
-		Stars.push_back(Star(random()% xSize, random() % ySize, random() % 5 + 2));
+		Star curStar(random() % xSize, random() % ySize, random() % 5 + 2);
+		Stars.push_back(curStar);
 	}
 }
 Universe::~Universe()
