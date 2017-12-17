@@ -1,15 +1,24 @@
-
-#include "Spaceship.h"
-
+п»ї#include "Spaceship.h"
 
 Spaceship::Spaceship()
 {
-	// у меня есть очень любопытный вариант создания рандомных спасешипов вместе с их геометрией. Я его реализую немного позже.
-	placeCount = 0;
-	mass=0;
-	driverCount=0;
-	gunPoints=0;
-	shipClass=Size::Size_extraSmall;
+	random_device rd;
+	mt19937 random(rd()); // РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј Р’РёС…СЂСЊ РњРµСЂСЃРµРЅРЅР° СЃР»СѓС‡Р°Р№РЅС‹Рј СЃС‚Р°СЂС‚РѕРІС‹Рј С‡РёСЃР»РѕРј
+
+	shipSize = Size(random() % Size::Size_count);
+	int shipPartCount = shipSize;
+
+	//РЅР°С‡РёРЅР°РµРј СЃС‡РёС‚Р°С‚СЊ РґР»РёРЅСѓ РѕСЃРЅРѕРІС‹ РєРѕСЂР°Р±Р»СЏ 
+	int minSize = 2;
+	int maxSize = 5;
+
+	for (int i = 0; i <= shipPartCount; i++)
+	{
+		minSize = maxSize;
+		maxSize *= 5;
+	}
+	//РЎРѕР±СЃС‚РІРµРЅРЅРѕ, РґР»РёРЅР°
+	int shipLen = (random() % (maxSize - minSize)) + minSize;
 }
 
 

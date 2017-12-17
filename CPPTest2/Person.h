@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "CoreEnums.h"
 #include "stdafx.h"
@@ -7,7 +7,7 @@
 #include <time.h>  
 #include <stdlib.h>  
 #include <stdio.h>  
-#include <random>		// для std::random_device и std::mt19937
+#include <random>		// РґР»СЏ std::random_device Рё std::mt19937
 
 using namespace std;
 

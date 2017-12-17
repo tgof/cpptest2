@@ -1,10 +1,9 @@
-#include "stdafx.h"
-#include "Universe.h"
+п»ї#include "Universe.h"
 
 Planet::Planet()
 {
 	random_device rd;
-	mt19937 random(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом
+	mt19937 random(rd()); // РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј Р’РёС…СЂСЊ РњРµСЂСЃРµРЅРЅР° СЃР»СѓС‡Р°Р№РЅС‹Рј СЃС‚Р°СЂС‚РѕРІС‹Рј С‡РёСЃР»РѕРј
 
 	planetSize = Size(random() % Size::Size_count);
 }
@@ -14,7 +13,7 @@ Planet::~Planet()
 Star::Star(int _x, int _y, int _planetCount)
 {
 	random_device rd;
-	mt19937 random(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом
+	mt19937 random(rd()); // РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј Р’РёС…СЂСЊ РњРµСЂСЃРµРЅРЅР° СЃР»СѓС‡Р°Р№РЅС‹Рј СЃС‚Р°СЂС‚РѕРІС‹Рј С‡РёСЃР»РѕРј
 
 	Planets.clear();
 	x = _x;
@@ -29,7 +28,7 @@ Star::~Star()
 Universe::Universe(int _starCount, int _xSize, int _ySize)
 {
 	random_device rd;
-	mt19937 random(rd()); // инициализируем Вихрь Мерсенна случайным стартовым числом
+	mt19937 random(rd()); // РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј Р’РёС…СЂСЊ РњРµСЂСЃРµРЅРЅР° СЃР»СѓС‡Р°Р№РЅС‹Рј СЃС‚Р°СЂС‚РѕРІС‹Рј С‡РёСЃР»РѕРј
 	
 	Stars.clear();
 

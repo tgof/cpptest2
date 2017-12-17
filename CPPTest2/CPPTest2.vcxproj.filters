@@ -27,10 +27,10 @@
     <ClInclude Include="Person.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Spaceship.h">
+    <ClInclude Include="CoreEnums.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CoreEnums.h">
+    <ClInclude Include="Spaceship.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClCompile Include="Person.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Spaceship.cpp">
+    <ClCompile Include="Universe.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Universe.cpp">
+    <ClCompile Include="Spaceship.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

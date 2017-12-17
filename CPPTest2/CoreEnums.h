@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 enum Size
 {
 	Size_extraSmall,
@@ -12,7 +12,7 @@ enum Race
 {
 	Race_human,
 	Size_robot,
-	Size_�ube,
+	Size_сube,
 	Race_count = 3
 };
 
