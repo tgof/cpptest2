@@ -6,22 +6,7 @@
 #include "CoreEnums.h"
 using namespace std;
 
-class MovingSpaceship {
-	Spaceship *spaceship;
-	double from;
-	double to;
-	double curPoint;
-	bool isAI;
-};
-
-enum ShipPartEnum {
-
-};
-
-class ShipPart {
-	int SizeCells;
-	ShipPartEnum ShipPart;
-};
+class ShipPart;
 
 class Spaceship
 {
@@ -39,4 +24,23 @@ private:
 	int mass;
 	vector<ShipPart> construction;
 };
+
+
+class MovingSpaceship {
+	Spaceship *spaceship;
+	double from;
+	double to;
+	double curPoint;
+	bool isAI;
+};
+
+enum ShipPartEnum {
+
+};
+
+class ShipPart {
+	int SizeCells;
+	//ShipPartEnum ShipPart;
+};
+
 
