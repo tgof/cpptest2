@@ -11,8 +11,8 @@ enum Size
 enum Race
 {
 	Race_human,
-	Size_robot,
-	Size_сube,
+	Race_robot,
+	Race_cube,
 	Race_count = 3
 };
 
