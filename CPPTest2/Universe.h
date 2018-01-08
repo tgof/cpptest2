@@ -1,7 +1,9 @@
-#pragma once
-#include <random>		// для std::random_device и std::mt19937
+п»ї#pragma once
+#include <random>		// РґР»СЏ std::random_device Рё std::mt19937
 #include <vector>  
 #include <string>  
+
+#include "CoreEnums.h"
 
 using namespace std;
 
@@ -12,7 +14,7 @@ public:
 	~Planet();
 
 	string Name;
-	int Size;	// это инт. сайз должен быть - маленький, срений, большой, экстрабольшой. в общем градация такая же как с кораблями. видимо, надо делать энум.	
+	Size planetSize;	
 };
 class Star
 {
@@ -20,10 +22,10 @@ public:
 	Star(int _x, int _y, int _planetCount);
 	~Star();
 
-	int x;					// координата X
-	int y;					// координата Y
+	int x;					// РєРѕРѕСЂРґРёРЅР°С‚Р° X
+	int y;					// РєРѕРѕСЂРґРёРЅР°С‚Р° Y
 	string Name;
-	vector<Planet> Planets;		// планеты
+	vector<Planet> Planets;		// РїР»Р°РЅРµС‚С‹
 };
 class Universe
 {

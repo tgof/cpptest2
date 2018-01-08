@@ -1,21 +1,46 @@
-#pragma once
+п»ї#pragma once
+#include <random>		// РґР»СЏ std::random_device Рё std::mt19937
+#include <vector>  
+#include <string>  
 
-#include "stdafx.h"
+#include "CoreEnums.h"
+using namespace std;
+
+class ShipPart;
 
 class Spaceship
 {
 public:
+	double speed;
+	Size shipSize;
+	string name;
+
+	double getSpeed();
+	double getFirePower();
 	Spaceship();
-	Spaceship(int _placeCount, int _mass, int _driverCount, int _gunPoints, int _shipClass) { placeCount = _placeCount; mass = _mass; driverCount = _driverCount; gunPoints = _gunPoints; shipClass = _shipClass; }
 	~Spaceship();
 
-	Spaceship(Spaceship &other) { this->placeCount = other.driverCount; this->mass = other.mass; this->driverCount = other.driverCount; this->gunPoints = other.gunPoints; this->shipClass = other.shipClass; }
 private:
-	int placeCount;		// сколько в корабль вообще помещается существ
 	int mass;
-	int driverCount;
-	int gunPoints;
-	int shipClass;		// это значит буквально - класс корабля, т.е. фрегат это, эсминец, крейсер или линкор.
+	vector<ShipPart> construction;
+};
+
+
+class MovingSpaceship {
+	Spaceship *spaceship;
+	double from;
+	double to;
+	double curPoint;
+	bool isAI;
+};
+
+enum ShipPartEnum {
 
 };
+
+class ShipPart {
+	int SizeCells;
+	//ShipPartEnum ShipPart;
+};
+
 
