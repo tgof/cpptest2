@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/wge95mxcg5u85fvs?svg=true)](https://ci.appveyor.com/project/leha-bot/cpptest2)
 # cpptest2
 
 Небольшой тестовый игровой проект Ильи (@ilfinkel).
